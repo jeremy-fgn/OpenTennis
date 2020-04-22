@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap');
+
+:root {
+	--cs-white: rgba(242, 242, 242, 1);
+	--cs-red-light: rgba(242, 86, 72, 1);
+	--cs-orange-light: rgba(251, 70, 23, 1);
+	--cs-orange-dark: rgba(216, 78, 47, 1);
+	--cs-grey: rgba(52, 58, 64, 1);
+	--cs-black: rgba(38, 38, 38, 1);
+}
+
+::selection {
+	color: var(--cs-white);
+	background-color: var(--cs-orange-dark);
+}
+
+::-moz-selection {
+	color: var(--cs-white);
+	background-color: var(--cs-orange-dark);
+}
+
+::-webkit-selection {
+	color: var(--cs-white);
+	background-color: var(--cs-orange-dark);
+}
+
+::-webkit-scrollbar {
+	width: .6em;
+	height: .2em;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--cs-red-light);
+}
+::-webkit-scrollbar-track {
+	background: var(--cs-grey);
+}
+
+body {
+	scrollbar-face-color: var(--cs-red-light);
+	scrollbar-track-color: var(--cs-grey);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html {
+	width: 100%;
+	min-height: 100%;
+}
+
+body {
+	background-color: var(--cs-black);
+}
+
+a {
+	text-indent: 0;
+	text-shadow: none;
+	text-transform: none;
+	color: black;
+	text-decoration: none !important;
+}
+
+a:hover {
+	color: var(--cs-orange-light);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--cs-white);
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Archivo', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+.material-icons {
+	color: var(--cs-white);
+}
+/*================= MENU =================*/
+.navbar {
+	padding: 0.2rem 2rem;
+	background-color: var(--cs-black);
+}
+
+.navbar * {
+	color: var(--cs-white);
+	transition: ease-out .1s;
+}
+
+.icon-link *:hover {
+	color: var(--cs-orange-light);
+	transition: ease-in .1s;
+}
+
+.nav-link *:hover {
+	color: var(--cs-orange-light);
+}
+
+.nav-link-multiple:hover * {
+	color: var(--cs-orange-light);
+}
+
+.active * {
+	color: var(--cs-orange-light) !important;
+}
+
+.nav-fixed-size {
+	width: 33.3%;
+}
+
+.nav-text,
+.nav-item .material-icons {
+	font-size: 1.6rem !important;
+}
+
+.nav-text {
+	text-transform: capitalize;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+}
+
+.nav-image {
+	max-width: 100%;
+	max-height: 4rem;
+}
+/*=============================================*/
+
+/*================= ACCUEIL =================*/
+.video-container {
+	height: 100%;
+}
+
+.video-container iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.img-accueil {
+	width: 100%;
+	height: auto;
+}
+/*=============================================*/
+
+/*================= BILLETTERIE =================*/
+.row {
+	background-color: var(--cs-grey);
+	margin: 0;
+	padding: 4rem;
+}
+
+.row-planning {
+	/* background-image: url('https://images.unsplash.com/photo-1448743133657-f67644da3008?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+  background-repeat: no-repeat;
+  background-size: cover; */
+	background-color: var(--cs-grey);
+}
+
+.row-players {
+	/* background-image: url('https://mspweb.blob.core.windows.net/media/2019/05/mjaxxrdevi-tennis-court-racket-for-the-topp-webb.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+	background-color: var(--cs-black);
+}
+
+.row-retour {
+	padding: 1rem 4rem !important;
+}
+
+.row-explications {
+	background-color: var(--cs-red-light);
+}
+
+.btn-outline-custom {
+	color: var(--cs-white);
+	border: solid 2px var(--cs-orange-light);
+	background-color: var(--cs-grey);
+}
+
+.btn-outline-custom:hover {
+	color: var(--cs-white);
+	background-color: var(--cs-orange-light);
+	border: solid 2px var(--cs-orange-light);
+}
+
+.btn-outline-custom:active {
+	border: solid 2px var(--cs-orange-light);
+	color: var(--cs-white);
+	background-color: var(--cs-orange-light);
+}
+
+.form-control-custom {
+	display: block;
+	width: auto;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--cs-white);
+	background-color: var(--cs-grey);
+	background-clip: padding-box;
+	border: solid 2px var(--cs-orange-light);
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+.form-control-custom:focus {
+	border-radius: .25rem;
+	outline: none !important;
+	box-shadow: 0px 0px 8px var(--cs-orange-light);
+}
+
+.form-control-custom::-webkit-search-cancel-button {
+	display: none;
+}
+
+.form-control-custom::placeholder {
+	color: var(--cs-white);
+	opacity: .4;
+	font-style: italic;
+}
+
+.players-wrapper {
+	/* background-color: var(--cs-grey); */
+	background-color: transparent;
+}
+
+.player-result {
+	background-color: var(--cs-red-light);
+	width: 160px;
+	height: 100px;
+}
+
+.even {
+	opacity: .88;
+}
+
+.player-result:hover * {
+	font-size: 110%;
+}
+
+.player-result p {
+	font-weight: 600;
+}
+
+.player-result .material-icons {
+	font-size: 40px;
+}
+
+.img-schema {
+	height: 20rem;
+	width: auto;
+}
+
+.match-wrapper * {
+	color: var(--cs-black);
+}
+
+.match-result {
+	background-color: var(--cs-white);
+}
+
+.match-result-item {
+	padding: .3rem .8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*=============================================*/
+
+/*================= ACHAT =================*/
+.input-nb-billets {
+	width: 4rem !important;
+}
+
+.seats-wrapper {
+}
+
+.seat-result {
+	color: var(--cs-white);
+	background-color: var(--cs-red-light);
+	width: 60px;
+	height: 40px;
+}
+
+.invisible-checkbox {
+	visibility: visible !important;
+	position: absolute;
+	opacity: 0;
+	width: 60px;
+	height: 40px;
+}
+
+.invisible-checkbox:checked + label {
+	background-color: red !important;
+}
+
+/*=============================================*/
+
+/*===========================================*/
+.form-control-custom-connexion {
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--cs-white);
+	background-color: var(--cs-grey);
+	background-clip: padding-box;
+	border: solid 2px var(--cs-orange-light);
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+.form-control-custom-connexion:focus {
+	border-radius: .25rem;
+	outline: none !important;
+	box-shadow: 0px 0px 8px var(--cs-orange-light);
+	color: var(--cs-white);
+	background-color: var(--cs-grey);
+	background-clip: padding-box;
+	border: solid 2px var(--cs-orange-light);
+}
+
+.form-control-custom-connexion::-webkit-search-cancel-button {
+	display: none;
+}
+
+/*===========================================*/
+
+/*================= FOOTER =================*/
+.footer {
+	background-color: var(--cs-black);
+	padding: 0.2rem 2rem;
+}
+
+.footer p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	opacity: .85;
+}
+/*=============================================*/

@@ -1,0 +1,10 @@
+insert into Equipe (idEquipe, idJoueur1, idJoueur2) values (1, 8, 29);
+insert into Equipe (idEquipe, idJoueur1, idJoueur2) values (2, 14, 27);
+insert into Equipe (idEquipe, idJoueur1, idJoueur2) values (3, 1, 28);
+insert into Equipe (idEquipe, idJoueur1, idJoueur2) values (4, 11, 27);
+insert into Equipe (idEquipe, idJoueur1, idJoueur2) values (5, 7, 24);
+insert into Equipe (idEquipe, idJoueur1, idJoueur2) values (6, 13, 27);
+insert into Equipe (idEquipe, idJoueur1, idJoueur2) values (7, 10, 21);
+insert into Equipe (idEquipe, idJoueur1, idJoueur2) values (8, 14, 18);
+insert into Equipe (idEquipe, idJoueur1, idJoueur2) values (9, 9, 30);
+insert into Equipe (idEquipe, idJoueur1, idJoueur2) values (10, 3, 24);
